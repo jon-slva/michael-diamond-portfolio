@@ -1,9 +1,23 @@
+import { useState, useEffect } from 'react'
+import { Slider } from '../../components/Slider/Slider'
 import './Home.scss'
+import { SliderProps } from './types';
+
+// import image JSON
 
 export function Home(): React.ReactElement {
+	const [sliderImages, setSliderImages] = useState<SliderProps | null>(null)
+	// const [galleryImages, setGalleryImages] = useState<GalleryProps | null>(null)
+
+	useEffect(() => {
+		// fetch images
+		setSliderImages(null)
+	}, [])
+
 	return (
 		<main>
 
+			<Slider sliderImages={sliderImages} />
 			<section style={{
 				width: '100%',
 				backgroundColor: 'lightblue',
