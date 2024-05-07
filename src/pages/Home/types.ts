@@ -1,13 +1,13 @@
 export interface Image {
 	url: string;
 	alt: string;
+}
+export interface ExtendedImage extends Image {
 	category: string;
 	slider: boolean;
 }
-export interface SliderProps {
-	sliderImages: Image[] | null;
-}
-export interface GalleryProps {
-	galleryImages: Image[];
-}
+
+export type SliderProps = Image[];
+
+export type GalleryProps = Image[];
 

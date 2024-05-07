@@ -1,11 +1,18 @@
 import './Slider.scss'
+import { useState } from 'react';
 import { SliderProps } from './types';
 
 export function Slider({ sliderImages }: SliderProps): React.ReactElement {
+	const [currentSlide, setCurrentSlide] = useState(0)
+	const [sliderInterval, setSliderInterval] = useState(null)
+
+
+
 	return (
 		<section className='slider-section'>
 			<aside className='slider-container'>
-				<img className='slide' src="placehttps://placehold.co/4000x2000/eee/bbb?text=Slide" alt="" />
+
+				{/* Slider Images */}
 				{sliderImages.map((image, index) => {
 					return (
 						<img
@@ -16,8 +23,16 @@ export function Slider({ sliderImages }: SliderProps): React.ReactElement {
 						/>
 					)
 				})}
-			</aside>
 
+				{/* Slider Indicators */}
+				<div>
+					{sliderImages.map((dot, index) => {
+						return (
+							<div key={index} className={`slide-dot`}></div>
+						)
+					})}
+				</div>
+			</aside>
 		</section>
 	)
 }

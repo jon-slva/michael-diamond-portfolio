@@ -3,5 +3,5 @@ export interface Image {
 	alt: string;
 }
 export interface SliderProps {
-	sliderImages: Image[] | null;
+	sliderImages: Image[];
 }
