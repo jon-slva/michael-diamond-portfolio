@@ -6,15 +6,15 @@ import { SliderProps } from './types';
 // import image JSON
 const placeholderImages = [
 	{
-		url: 'https://placehold.co/3800x2000/bbb/bbb?text=Placeholder%201',
+		url: 'https://placehold.co/3800x2000/bbb/fff?text=Placeholder%201',
 		alt: 'placeholder image',
 	},
 	{
-		url: 'https://placehold.co/3800x2000/bbb/bbb?text=Placeholder%202',
+		url: 'https://placehold.co/3800x2000/bbb/fff?text=Placeholder%202',
 		alt: 'placeholder image',
 	},
 	{
-		url: 'https://placehold.co/3800x2000/bbb/bbb?text=Placeholder%203',
+		url: 'https://placehold.co/3800x2000/bbb/fff?text=Placeholder%203',
 		alt: 'placeholder image',
 	},
 ]

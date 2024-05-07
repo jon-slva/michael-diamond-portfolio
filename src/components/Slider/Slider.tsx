@@ -4,7 +4,7 @@ import { SliderProps } from './types';
 
 export function Slider({ sliderImages }: SliderProps): React.ReactElement {
 	const [currentSlide, setCurrentSlide] = useState(0)
-	const [sliderInterval, setSliderInterval] = useState(null)
+	// const [sliderInterval, setSliderInterval] = useState(null)
 
 
 
@@ -16,7 +16,7 @@ export function Slider({ sliderImages }: SliderProps): React.ReactElement {
 				{sliderImages.map((image, index) => {
 					return (
 						<img
-							className={`slide`}
+							className={`slide ${index === currentSlide ? 'visible' : 'hidden'}`}
 							key={index}
 							src={image.url}
 							alt={image.alt}
@@ -25,10 +25,13 @@ export function Slider({ sliderImages }: SliderProps): React.ReactElement {
 				})}
 
 				{/* Slider Indicators */}
-				<div>
-					{sliderImages.map((dot, index) => {
+				<div className='slider__steps'>
+					{sliderImages.map((_, index) => {
 						return (
-							<div key={index} className={`slide-dot`}></div>
+							<div
+								key={index}
+								className={`slider__steps--dots ${index === currentSlide ? 'current' : ''}`}>
+							</div>
 						)
 					})}
 				</div>
