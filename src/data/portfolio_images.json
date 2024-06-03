@@ -1,216 +1,216 @@
 [
     {
-        "url": "./src/assets/images/portfolio/mens/Mens-1.jpg",
+        "url": "src/assets/images/portfolio/mens/Mens-1.jpg",
         "title": "Mens 1",
         "alt": "alt text",
         "category": "mens"
     },
     {
-        "url": "./src/assets/images/portfolio/mens/Mens-2.jpg",
+        "url": "src/assets/images/portfolio/mens/Mens-2.jpg",
         "title": "Mens 2",
         "alt": "alt text",
         "category": "mens"
     },
     {
-        "url": "./src/assets/images/portfolio/mens/Mens-3.jpg",
+        "url": "src/assets/images/portfolio/mens/Mens-3.jpg",
         "title": "Mens 3",
         "alt": "alt text",
         "category": "mens"
     },
     {
-        "url": "./src/assets/images/portfolio/mens/Mens-4.jpg",
+        "url": "src/assets/images/portfolio/mens/Mens-4.jpg",
         "title": "Mens 4",
         "alt": "alt text",
         "category": "mens"
     },
     {
-        "url": "./src/assets/images/portfolio/mens/Mens-5.jpg",
+        "url": "src/assets/images/portfolio/mens/Mens-5.jpg",
         "title": "Mens 5",
         "alt": "alt text",
         "category": "mens"
     },
     {
-        "url": "./src/assets/images/portfolio/mens/Mens-6.jpg",
+        "url": "src/assets/images/portfolio/mens/Mens-6.jpg",
         "title": "Mens 6",
         "alt": "alt text",
         "category": "mens"
     },
     {
-        "url": "./src/assets/images/portfolio/mens/Mens-7.jpg",
+        "url": "src/assets/images/portfolio/mens/Mens-7.jpg",
         "title": "Mens 7",
         "alt": "alt text",
         "category": "mens"
     },
     {
-        "url": "./src/assets/images/portfolio/mens/Mens-8.jpg",
+        "url": "src/assets/images/portfolio/mens/Mens-8.jpg",
         "title": "Mens 8",
         "alt": "alt text",
         "category": "mens"
     },
     {
-        "url": "./src/assets/images/portfolio/mens/Mens-9.jpg",
+        "url": "src/assets/images/portfolio/mens/Mens-9.jpg",
         "title": "Mens 9",
         "alt": "alt text",
         "category": "mens"
     },
     {
-        "url": "./src/assets/images/portfolio/mens/Mens-10.jpg",
+        "url": "src/assets/images/portfolio/mens/Mens-10.jpg",
         "title": "Mens 10",
         "alt": "alt text",
         "category": "mens"
     },
     {
-        "url": "./src/assets/images/portfolio/mens/Mens-11.jpg",
+        "url": "src/assets/images/portfolio/mens/Mens-11.jpg",
         "title": "Mens 11",
         "alt": "alt text",
         "category": "mens"
     },
     {
-        "url": "./src/assets/images/portfolio/mens/Mens-12.jpg",
+        "url": "src/assets/images/portfolio/mens/Mens-12.jpg",
         "title": "Mens 12",
         "alt": "alt text",
         "category": "mens"
     },
     {
-        "url": "./src/assets/images/portfolio/mens_brights/Mens-Brights-1.jpg",
+        "url": "src/assets/images/portfolio/mens_brights/Mens-Brights-1.jpg",
         "title": "Mens Brights 1",
         "alt": "alt text",
         "category": "mensBrights"
     },
     {
-        "url": "./src/assets/images/portfolio/mens_brights/Mens-Brights-2.jpg",
+        "url": "src/assets/images/portfolio/mens_brights/Mens-Brights-2.jpg",
         "title": "Mens Brights 2",
         "alt": "alt text",
         "category": "mensBrights"
     },
     {
-        "url": "./src/assets/images/portfolio/mens_brights/Mens-Brights-3.jpg",
+        "url": "src/assets/images/portfolio/mens_brights/Mens-Brights-3.jpg",
         "title": "Mens Brights 3",
         "alt": "alt text",
         "category": "mensBrights"
     },
     {
-        "url": "./src/assets/images/portfolio/mens_brights/Mens-Brights-4.jpg",
+        "url": "src/assets/images/portfolio/mens_brights/Mens-Brights-4.jpg",
         "title": "Mens Brights 4",
         "alt": "alt text",
         "category": "mensBrights"
     },
     {
-        "url": "./src/assets/images/portfolio/mens_brights/Mens-Brights-5.jpg",
+        "url": "src/assets/images/portfolio/mens_brights/Mens-Brights-5.jpg",
         "title": "Mens Brights 5",
         "alt": "alt text",
         "category": "mensBrights"
     },
     {
-        "url": "./src/assets/images/portfolio/mens_brights/Mens-Brights-6.jpg",
+        "url": "src/assets/images/portfolio/mens_brights/Mens-Brights-6.jpg",
         "title": "Mens Brights 6",
         "alt": "alt text",
         "category": "mensBrights"
     },
     {
-        "url": "./src/assets/images/portfolio/preppy_mens/Preppy-Mens-1.jpg",
+        "url": "src/assets/images/portfolio/preppy_mens/Preppy-Mens-1.jpg",
         "title": "Preppy Mens 1",
         "alt": "alt text",
         "category": "preppyMens"
     },
     {
-        "url": "./src/assets/images/portfolio/preppy_mens/Preppy-Mens-2.jpg",
+        "url": "src/assets/images/portfolio/preppy_mens/Preppy-Mens-2.jpg",
         "title": "Preppy Mens 2",
         "alt": "alt text",
         "category": "preppyMens"
     },
     {
-        "url": "./src/assets/images/portfolio/preppy_mens/Preppy-Mens-3.jpg",
+        "url": "src/assets/images/portfolio/preppy_mens/Preppy-Mens-3.jpg",
         "title": "Preppy Mens 3",
         "alt": "alt text",
         "category": "preppyMens"
     },
     {
-        "url": "./src/assets/images/portfolio/preppy_mens/Preppy-Mens-4.jpg",
+        "url": "src/assets/images/portfolio/preppy_mens/Preppy-Mens-4.jpg",
         "title": "Preppy Mens 4",
         "alt": "alt text",
         "category": "preppyMens"
     },
     {
-        "url": "./src/assets/images/portfolio/preppy_mens/Preppy-Mens-5.jpg",
+        "url": "src/assets/images/portfolio/preppy_mens/Preppy-Mens-5.jpg",
         "title": "Preppy Mens 5",
         "alt": "alt text",
         "category": "preppyMens"
     },
     {
-        "url": "./src/assets/images/portfolio/preppy_mens/Preppy-Mens-6.jpg",
+        "url": "src/assets/images/portfolio/preppy_mens/Preppy-Mens-6.jpg",
         "title": "Preppy Mens 6",
         "alt": "alt text",
         "category": "preppyMens"
     },
     {
-        "url": "./src/assets/images/portfolio/preppy_mens/Preppy-Mens-7.jpg",
+        "url": "src/assets/images/portfolio/preppy_mens/Preppy-Mens-7.jpg",
         "title": "Preppy Mens 7",
         "alt": "alt text",
         "category": "preppyMens"
     },
     {
-        "url": "./src/assets/images/portfolio/womens/Womens-1.jpg",
+        "url": "src/assets/images/portfolio/womens/Womens-1.jpg",
         "title": "Womens 1",
         "alt": "alt text",
         "category": "womens"
     },
     {
-        "url": "./src/assets/images/portfolio/womens/Womens-2.jpg",
+        "url": "src/assets/images/portfolio/womens/Womens-2.jpg",
         "title": "Womens 2",
         "alt": "alt text",
         "category": "womens"
     },
     {
-        "url": "./src/assets/images/portfolio/womens/Womens-3.jpg",
+        "url": "src/assets/images/portfolio/womens/Womens-3.jpg",
         "title": "Womens 3",
         "alt": "alt text",
         "category": "womens"
     },
     {
-        "url": "./src/assets/images/portfolio/womens/Womens-4.jpg",
+        "url": "src/assets/images/portfolio/womens/Womens-4.jpg",
         "title": "Womens 4",
         "alt": "alt text",
         "category": "womens"
     },
     {
-        "url": "./src/assets/images/portfolio/womens/Womens-5.jpg",
+        "url": "src/assets/images/portfolio/womens/Womens-5.jpg",
         "title": "Womens 5",
         "alt": "alt text",
         "category": "womens"
     },
     {
-        "url": "./src/assets/images/portfolio/womens/Womens-6.jpg",
+        "url": "src/assets/images/portfolio/womens/Womens-6.jpg",
         "title": "Womens 6",
         "alt": "alt text",
         "category": "womens"
     },
     {
-        "url": "./src/assets/images/portfolio/womens/Womens-7.jpg",
+        "url": "src/assets/images/portfolio/womens/Womens-7.jpg",
         "title": "Womens 7",
         "alt": "alt text",
         "category": "womens"
     },
     {
-        "url": "./src/assets/images/portfolio/womens/Womens-8.jpg",
+        "url": "src/assets/images/portfolio/womens/Womens-8.jpg",
         "title": "Womens 8",
         "alt": "alt text",
         "category": "womens"
     },
     {
-        "url": "./src/assets/images/portfolio/womens/Womens-9.jpg",
+        "url": "src/assets/images/portfolio/womens/Womens-9.jpg",
         "title": "Womens 9",
         "alt": "alt text",
         "category": "womens"
     },
     {
-        "url": "./src/assets/images/portfolio/womens/Womens-10.jpg",
+        "url": "src/assets/images/portfolio/womens/Womens-10.jpg",
         "title": "Womens 10",
         "alt": "alt text",
         "category": "womens"
     },
     {
-        "url": "./src/assets/images/portfolio/womens/Womens-11.jpg",
+        "url": "src/assets/images/portfolio/womens/Womens-11.jpg",
         "title": "Womens 11",
         "alt": "alt text",
         "category": "womens"
