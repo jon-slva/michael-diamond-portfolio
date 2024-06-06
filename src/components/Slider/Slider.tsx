@@ -1,13 +1,19 @@
 import './Slider.scss'
 import { useEffect, useState } from 'react';
-import { SliderProps } from './types';
+// import { SliderProps } from './types';
 
-export function Slider({ sliderImages }: SliderProps): React.ReactElement {
+import slideData from '../../data/slider_images.json'
+
+
+
+export function Slider(
+	// { sliderImages }: SliderProps
+): React.ReactElement {
 	const [currentSlide, setCurrentSlide] = useState(0)
 
 	useEffect(() => {
 		const interval = setInterval(() => {
-			setCurrentSlide(prevSlide => (prevSlide + 1) % sliderImages.length)
+			setCurrentSlide(prevSlide => (prevSlide + 1) % slideData.length)
 		}, 5000)
 
 		return () => clearInterval(interval);
@@ -18,28 +24,29 @@ export function Slider({ sliderImages }: SliderProps): React.ReactElement {
 			<aside className='slider-container'>
 
 				{/* Slider Images */}
-				{sliderImages.map((image, index) => {
-					return (
-						<img
-							className={`slide ${index === currentSlide ? 'visible' : 'hidden'}`}
-							key={index}
-							src={image.url}
-							alt={image.alt}
-						/>
-					)
-				})}
+				<ul>
+					{slideData.map((image, index) => (
+						<li key={index} className={index === currentSlide ? 'visible' : 'hidden'} >
+							<img
+								className="slide"
+								src={image.url}
+								alt={image.alt}
+							/>
+						</li>
+					))}
+				</ul>
 
 				{/* Slider Indicators */}
-				<div className='slider__steps'>
-					{sliderImages.map((_, index) => {
+				<ul className='slider__steps'>
+					{slideData.map((_, index) => {
 						return (
-							<div
+							<li
 								key={index}
 								className={`slider__steps--dots ${index === currentSlide ? 'current' : ''}`}>
-							</div>
+							</li>
 						)
 					})}
-				</div>
+				</ul>
 			</aside>
 		</section>
 	)
