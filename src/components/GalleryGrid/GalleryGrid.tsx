@@ -7,6 +7,7 @@ function GalleryGrid({ galleryImages }: GalleryProps): ReactElement {
 
 	return (
 		<section className='gallery-grid'>
+			
 			{galleryImages.map((image, index) => {
 				return (
 					<img
