@@ -1,0 +1,13 @@
+.gallery-grid {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	gap: 16px;
+	padding: 0 200px;
+
+	&__item {
+		object-fit: cover;
+		aspect-ratio: 4 / 3;
+		box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		border-radius: 4px;
+	}
+}
