@@ -6,7 +6,7 @@
 		"category": "mens",
 		"thumbSrc": "src/assets/images/portfolio/mens/thumbnails/Mens-1-thumb.jpg",
 		"thumbPosX": 0,
-		"thumbPosY": 0,
+		"thumbPosY": "15%",
 		"thumbScale": 1
 	},
 	{
@@ -16,7 +16,7 @@
 		"category": "mens",
 		"thumbSrc": "src/assets/images/portfolio/mens/thumbnails/Mens-2-thumb.jpg",
 		"thumbPosX": 0,
-		"thumbPosY": 0,
+		"thumbPosY": "17%",
 		"thumbScale": 1
 	},
 	{
@@ -26,7 +26,7 @@
 		"category": "mens",
 		"thumbSrc": "src/assets/images/portfolio/mens/thumbnails/Mens-3-thumb.jpg",
 		"thumbPosX": 0,
-		"thumbPosY": 0,
+		"thumbPosY": "21%",
 		"thumbScale": 1
 	},
 	{
@@ -35,8 +35,8 @@
 		"alt": "alt text",
 		"category": "mens",
 		"thumbSrc": "src/assets/images/portfolio/mens/thumbnails/Mens-4-thumb.jpg",
-		"thumbPosX": 0,
-		"thumbPosY": 0,
+		"thumbPosX": "0",
+		"thumbPosY": "5%",
 		"thumbScale": 1
 	},
 	{
@@ -45,8 +45,8 @@
 		"alt": "alt text",
 		"category": "mens",
 		"thumbSrc": "src/assets/images/portfolio/mens/thumbnails/Mens-5-thumb.jpg",
-		"thumbPosX": 0,
-		"thumbPosY": 0,
+		"thumbPosX": "0",
+		"thumbPosY": "15%",
 		"thumbScale": 1
 	},
 	{
@@ -136,7 +136,7 @@
 		"category": "mensBrights",
 		"thumbSrc": "src/assets/images/portfolio/mens_brights/thumbnails/Mens-Brights-2-thumb.jpg",
 		"thumbPosX": 0,
-		"thumbPosY": 0,
+		"thumbPosY": "20%",
 		"thumbScale": 1
 	},
 	{
@@ -166,7 +166,7 @@
 		"category": "mensBrights",
 		"thumbSrc": "src/assets/images/portfolio/mens_brights/thumbnails/Mens-Brights-5-thumb.jpg",
 		"thumbPosX": 0,
-		"thumbPosY": 0,
+		"thumbPosY": "30%",
 		"thumbScale": 1
 	},
 	{
@@ -186,7 +186,7 @@
 		"category": "preppyMens",
 		"thumbSrc": "src/assets/images/portfolio/preppy_mens/thumbnails/Preppy-Mens-1-thumb.jpg",
 		"thumbPosX": 0,
-		"thumbPosY": 0,
+		"thumbPosY": "60%",
 		"thumbScale": 1
 	},
 	{
@@ -206,7 +206,7 @@
 		"category": "preppyMens",
 		"thumbSrc": "src/assets/images/portfolio/preppy_mens/thumbnails/Preppy-Mens-3-thumb.jpg",
 		"thumbPosX": 0,
-		"thumbPosY": 0,
+		"thumbPosY": "50%",
 		"thumbScale": 1
 	},
 	{
@@ -216,7 +216,7 @@
 		"category": "preppyMens",
 		"thumbSrc": "src/assets/images/portfolio/preppy_mens/thumbnails/Preppy-Mens-4-thumb.jpg",
 		"thumbPosX": 0,
-		"thumbPosY": 0,
+		"thumbPosY": "0",
 		"thumbScale": 1
 	},
 	{
@@ -236,7 +236,7 @@
 		"category": "preppyMens",
 		"thumbSrc": "src/assets/images/portfolio/preppy_mens/thumbnails/Preppy-Mens-6-thumb.jpg",
 		"thumbPosX": 0,
-		"thumbPosY": 0,
+		"thumbPosY": "20%",
 		"thumbScale": 1
 	},
 	{

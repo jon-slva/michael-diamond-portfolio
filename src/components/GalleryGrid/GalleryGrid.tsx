@@ -15,6 +15,9 @@ function GalleryGrid({ galleryImages }: GalleryProps): ReactElement {
 						className="gallery-grid__item"
 						src={image.thumbSrc}
 						alt={image.alt}
+						style={{
+							objectPosition: `${image.thumbPosX} ${image.thumbPosY}`
+						}}
 					/>
 				)
 			})}
