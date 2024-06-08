@@ -29,7 +29,7 @@ export function Slider(
 						<li key={index} className={index === currentSlide ? 'visible' : 'hidden'} >
 							<img
 								className="slide"
-								src={image.url}
+								src={image.src}
 								alt={image.alt}
 							/>
 						</li>

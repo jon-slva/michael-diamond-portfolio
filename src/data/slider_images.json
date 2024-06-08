@@ -1,16 +1,16 @@
 [
 	{
-		"url": "https://placehold.co/3800x2000/bbb/fff?text=Placeholder%201",
+		"src": "src/assets/images/portfolio/mens_brights/Mens-Brights-5.jpg",
 		"text": "",
 		"alt": "Michael Diamond Portfolio - Slide 1"
 	},
 	{
-		"url": "https://placehold.co/3800x2000/bbb/fff?text=Placeholder%202",
+		"src": "src/assets/images/portfolio/mens/Mens-6.jpg",
 		"text": "",
 		"alt": "Michael Diamond Portfolio - Slide 2"
 	},
 	{
-		"url": "https://placehold.co/3800x2000/bbb/fff?text=Placeholder%203",
+		"src": "src/assets/images/portfolio/womens/Womens-9.jpg",
 		"text": "",
 		"alt": "Michael Diamond Portfolio - Slide 3"
 	}
