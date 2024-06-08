@@ -1,0 +1,58 @@
+@import '../../styles/partials/mixins';
+
+.gallery-filter {
+	background-color: #f5f5f5;
+	padding-top: 24px;
+
+	@include tablet {
+		padding-top: 24px;
+	}
+
+	@include desktop {
+		padding-top: 36px;
+	}
+
+	&__list {
+		display: flex;
+		justify-content: center;
+		margin-bottom: 32px;
+		flex-wrap: wrap;
+		gap: 8px;
+
+		@include tablet {
+			margin-bottom: 48px;
+		}
+
+		@include desktop {
+			margin-bottom: 64px;
+		}
+
+		&--item {
+			color: #333;
+			cursor: pointer;
+			font-size: 16px;
+			font-weight: 500;
+			padding: 8px 12px;
+
+			@include tablet {
+				font-size: 20px;
+				padding: 10px 20px;
+			}
+
+			@include desktop {
+				font-size: 24px;
+				padding: 12px 24px;
+			}
+
+			&:hover {
+				background-color: #e9e9e9;
+			}
+
+			&.active {
+				background-color: #333;
+				color: #fff;
+			}
+		}
+	}
+
+}
