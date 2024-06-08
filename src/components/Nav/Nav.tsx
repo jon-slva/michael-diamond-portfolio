@@ -1,29 +1,37 @@
 import './Nav.scss'
 import { NavLink } from 'react-router-dom';
 
-export function Nav(): React.ReactElement {
-	return (
-		<header style={{
-			display: 'flex',
-			justifyContent: 'space-between',
-			alignItems: 'center',
-		}}>
-			<img src="https://placehold.co/150x80/eee/bbb?text=Logo" alt="Michael Diamond Logo" />
 
-			<nav aria-label="Main navigation">
-				<img src="https://placehold.co/50x50/eee/bbb?text=X" alt="Mobile Menu" />
-				<ul style={{
-					display: 'flex',
-					alignContent: 'center',
-				}}>
+export function Nav(): React.ReactElement {
+
+	return (
+		<header className='header'>
+
+			<img
+				src="https://placehold.co/150x80/eee/bbb?text=Logo"
+				alt="Michael Diamond Logo"
+				className='header__logo'
+			/>
+
+
+			<nav aria-label="Main navigation" className='nav'>
+
+				<img
+					src="https://placehold.co/50x50/eee/bbb?text=X"
+					alt="Mobile Menu" className='nav__mobile-menu-btn'
+				/>
+
+				<ul className="nav__menu" >
 					<li>
-						<NavLink to="/" className="" aria-label="Portfolio page">Portfolio</NavLink>
+						<NavLink to="/" className="nav__menu--item" aria-label="Portfolio page">Portfolio</NavLink>
 					</li>
 					<li>
-						<NavLink to="/contact" className="" aria-label="Contact page">Contact</NavLink>
+						<NavLink to="/contact" className="nav__menu--item" aria-label="Contact page">Contact</NavLink>
 					</li>
 				</ul>
+
 			</nav>
-		</header>
+
+		</header >
 	);
 }

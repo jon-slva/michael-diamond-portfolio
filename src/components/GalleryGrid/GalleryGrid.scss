@@ -1,13 +1,30 @@
+@import '../../styles/partials/mixins';
+
 .gallery-grid {
 	display: grid;
-	grid-template-columns: repeat(5, 1fr);
+	grid-template-columns: repeat(2, 1fr);
 	gap: 16px;
-	padding: 0 200px;
+	padding: 0 24px;
+
+	@include tablet {
+		grid-template-columns: repeat(5, 1fr);
+		gap: 16px;
+		padding: 0 80px;
+	}
+
+	@include desktop {
+		gap: 24px;
+		padding: 0 160px;
+	}
 
 	&__item {
 		object-fit: cover;
 		aspect-ratio: 4 / 3;
 		box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 		border-radius: 4px;
+
+		@include tablet {}
+
+		@include desktop {}
 	}
 }
