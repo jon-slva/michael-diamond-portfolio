@@ -2,30 +2,15 @@
 	{
 		"url": "https://placehold.co/3800x2000/bbb/fff?text=Placeholder%201",
 		"text": "",
-		"alt": "placeholder image 1"
+		"alt": "Michael Diamond Portfolio - Slide 1"
 	},
 	{
 		"url": "https://placehold.co/3800x2000/bbb/fff?text=Placeholder%202",
 		"text": "",
-		"alt": "placeholder image 2"
-	},
-	{
-		"url": "https://placehold.co/3800x2000/bbb/fff?text=Placeholder%203",
-		"text": "",
-		"alt": "placeholder image 3"
-	},
-	{
-		"url": "src/assets/images/slides/slide_1.jpg",
-		"text": "",
-		"alt": "Michael Diamond Portfolio - Slide 1"
-	},
-	{
-		"url": "src/assets/images/slides/slide_2.jpg",
-		"text": "",
 		"alt": "Michael Diamond Portfolio - Slide 2"
 	},
 	{
-		"url": "https://placehold.co/3800x2000/bbb/fff?text=Placeholder%206",
+		"url": "https://placehold.co/3800x2000/bbb/fff?text=Placeholder%203",
 		"text": "",
 		"alt": "Michael Diamond Portfolio - Slide 3"
 	}
