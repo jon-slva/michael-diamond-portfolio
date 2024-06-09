@@ -13,9 +13,9 @@
 	}
 
 	@include desktop {
-		grid-template-columns: repeat(5, 1fr);
+		// grid-template-columns: repeat(5, 1fr);
 		gap: 16px;
-		padding: 0 64px;
+		padding: 0 180px;
 	}
 
 	&__item {
