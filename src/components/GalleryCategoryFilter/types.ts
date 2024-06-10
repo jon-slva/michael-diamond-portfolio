@@ -1,9 +1,9 @@
 export interface Image {
-	url: string;
+	src: string;
 	alt: string;
 	category?: string;
 }
 
 export type GalleryProps = {
-	galleryImages: Image[]
+	galleryImages: Image[];
 };

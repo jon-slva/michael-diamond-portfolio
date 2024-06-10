@@ -1,5 +1,5 @@
 export interface Image {
-	url: string;
+	src: string;
 	alt: string;
 	category?: string;
 	thumbSrc: string;
@@ -9,5 +9,5 @@ export interface Image {
 }
 
 export type GalleryProps = {
-	galleryImages: Image[]
+	galleryImages: Image[];
 };
