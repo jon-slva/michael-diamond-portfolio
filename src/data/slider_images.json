@@ -1,21 +1,16 @@
 [
 	{
-		"src": "../assets/images/portfolio/mens_brights/Mens-Brights-5.jpg",
+		"src": "/public/images/portfolio/mens_brights/Mens-Brights-5.jpg",
 		"text": "",
 		"alt": "Michael Diamond Portfolio - Slide 1"
 	},
 	{
-		"src": "src/assets/images/portfolio/mens_brights/Mens-Brights-5.jpg",
-		"text": "",
-		"alt": "Michael Diamond Portfolio - Slide 1"
-	},
-	{
-		"src": "src/assets/images/portfolio/mens/Mens-6.jpg",
+		"src": "/public/images/portfolio/mens/Mens-6.jpg",
 		"text": "",
 		"alt": "Michael Diamond Portfolio - Slide 2"
 	},
 	{
-		"src": "src/assets/images/portfolio/womens/Womens-9.jpg",
+		"src": "/public/images/portfolio/womens/Womens-9.jpg",
 		"text": "",
 		"alt": "Michael Diamond Portfolio - Slide 3"
 	}
