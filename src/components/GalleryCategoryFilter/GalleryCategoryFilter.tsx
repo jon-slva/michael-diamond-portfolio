@@ -1,7 +1,7 @@
 import GalleryGrid from '../GalleryGrid/GalleryGrid'
 import './GalleryCategoryFilter.scss'
 // import { GalleryProps } from './types'
-import { ReactElement, useState } from 'react'
+import { ReactElement } from 'react'
 
 import galleryData from '../../data/portfolio_images.json'
 
@@ -22,9 +22,9 @@ import galleryData from '../../data/portfolio_images.json'
 export function GalleryCategoryFilter(
 	// { galleryImages }: GalleryProps
 ): ReactElement {
-	const [category, setCategory] = useState('All')
+	// const [category, setCategory] = useState('All')
 
-	const handleClick = (e) => {
+	const handleClick = (e: { currentTarget: { innerText: string } }) => {
 		alert(`clicked ${e.currentTarget.innerText}`);
 	};
 
