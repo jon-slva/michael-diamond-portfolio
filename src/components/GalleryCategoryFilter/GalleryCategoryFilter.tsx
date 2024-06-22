@@ -1,50 +1,45 @@
-import GalleryGrid from '../GalleryGrid/GalleryGrid'
-import './GalleryCategoryFilter.scss'
-// import { GalleryProps } from './types'
-import { ReactElement } from 'react'
+import React, { useState, useEffect } from 'react';
+import GalleryGrid from '../GalleryGrid/GalleryGrid';
+import './GalleryCategoryFilter.scss';
+import galleryData from '../../data/portfolio_images.json';
 
-import galleryData from '../../data/portfolio_images.json'
+export function GalleryCategoryFilter(): ReactElement {
+	// State to hold unique categories
+	const [categories, setCategories] = useState<string[]>([]);
+	const [selectedCategory, setSelectedCategory] = useState<string>('All');
 
-{/* 
-	
-	// foundCategories variable is an array of categories found in the galleryData JSON import data stored as strings. I will need a function to filter the galleryData array and return an array of categories. 
+	// Extract categories from galleryData
+	useEffect(() => {
+		const foundCategories = ['All']; // Initialize with 'All'
+		galleryData.forEach(item => {
+			const category = item.category; // Assuming each item has a 'category' field
+			if (category && !foundCategories.includes(category)) {
+				foundCategories.push(category);
+			}
+		});
+		setCategories(foundCategories);
+	}, []);
 
-	// useState to manage the category state
-	- category state is an array of category strings || ["cat 1", "cat 2", ...].
-	- the default state is the  is populated by filtering the galleryData array. 
-	- The categories are then rendered as buttons in the aside element.
-	
-	
-	- the first element is the unchanged array of categories
-	- the second 
-*/}
-
-export function GalleryCategoryFilter(
-	// { galleryImages }: GalleryProps
-): ReactElement {
-	// const [category, setCategory] = useState('All')
-
-	const handleClick = (e: { currentTarget: { innerText: string } }) => {
-		alert(`clicked ${e.currentTarget.innerText}`);
+	const handleClick = (category: string) => {
+		setSelectedCategory(category);
 	};
 
+	// Filter galleryData based on selectedCategory
+	const filteredGalleryData = selectedCategory === 'All' ? galleryData : galleryData.filter(item => item.category === selectedCategory);
 
 	return (
 		<section className='gallery-filter'>
 			<aside>
-				{/* Logic for getting categories from data array & rendering them goes here */}
 				<ul className='gallery-filter__list'>
-					<li className='gallery-filter__list--item' onClick={handleClick} >All</li>
-					<li className='gallery-filter__list--item' onClick={handleClick} >Category 1</li>
-					<li className='gallery-filter__list--item' onClick={handleClick} >Category 2</li>
-					<li className='gallery-filter__list--item' onClick={handleClick} >Category 3</li>
-					<li className='gallery-filter__list--item' onClick={handleClick} >Category 4</li>
-					<li className='gallery-filter__list--item' onClick={handleClick} >Category 5</li>
+					{categories.map((category, index) => (
+						<li key={index} className='gallery-filter__list--item' onClick={() => handleClick(category)}>
+							{category}
+						</li>
+					))}
 				</ul>
 			</aside>
 
-			<GalleryGrid galleryImages={galleryData} />
-
+			<GalleryGrid galleryImages={filteredGalleryData} />
 		</section>
-	)
+	);
 }
