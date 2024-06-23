@@ -19,6 +19,8 @@ import galleryData from '../../data/portfolio_images.json'
 	- the second 
 */}
 
+
+
 export function GalleryCategoryFilter(
 	// { galleryImages }: GalleryProps
 ): ReactElement {
