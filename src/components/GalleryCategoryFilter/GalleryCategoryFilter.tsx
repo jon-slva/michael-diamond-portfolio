@@ -19,6 +19,15 @@ import galleryData from '../../data/portfolio_images.json'
 	- the second 
 */}
 
+const foundCategories = ['All']
+
+galleryData.forEach((image: { category: string }) => {
+	const category = image.category;
+	if (!foundCategories.includes(category)) {
+		foundCategories.push(category)
+	}
+})
+
 
 
 export function GalleryCategoryFilter(
