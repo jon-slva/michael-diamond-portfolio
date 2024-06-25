@@ -2,7 +2,7 @@ import './Nav.scss'
 import { NavLink } from 'react-router-dom';
 
 
-export function Nav(): React.ReactElement {
+export default function Nav(): React.ReactElement {
 
 	return (
 		<header className='header'>

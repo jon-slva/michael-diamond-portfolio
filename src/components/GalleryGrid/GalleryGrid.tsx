@@ -3,7 +3,7 @@ import { ReactElement } from 'react'
 import { GalleryProps } from './types'
 
 
-function GalleryGrid({ galleryImages }: GalleryProps): ReactElement {
+export default function GalleryGrid({ galleryImages }: GalleryProps): ReactElement {
 
 	return (
 		<section className='gallery-grid'>
@@ -25,5 +25,3 @@ function GalleryGrid({ galleryImages }: GalleryProps): ReactElement {
 		</section>
 	)
 }
-
-export default GalleryGrid

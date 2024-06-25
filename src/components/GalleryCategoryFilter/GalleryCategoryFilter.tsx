@@ -1,9 +1,8 @@
 import GalleryGrid from '../GalleryGrid/GalleryGrid'
 import './GalleryCategoryFilter.scss'
 // import { GalleryProps } from './types'
-import { ReactElement } from 'react'
+import { ReactElement, useEffect, useState } from 'react'
 
-import galleryData from '../../data/portfolio_images.json'
 
 {/* 
 	
@@ -19,42 +18,32 @@ import galleryData from '../../data/portfolio_images.json'
 	- the second 
 */}
 
-const foundCategories = ['All']
 
-galleryData.forEach((image: { category: string }) => {
-	const category = image.category;
-	if (!foundCategories.includes(category)) {
-		foundCategories.push(category)
-	}
-})
-
-
-
-export function GalleryCategoryFilter(
-	// { galleryImages }: GalleryProps
-): ReactElement {
-	// const [category, setCategory] = useState('All')
+export default function GalleryCategoryFilter({ galleryData, foundCategories }): ReactElement {
+	// const [selectedCategory, setSelectedCategory] = useState('All')
 
 	const handleClick = (e: { currentTarget: { innerText: string } }) => {
 		alert(`clicked ${e.currentTarget.innerText}`);
 	};
-
+	console.log(foundCategories)
 
 	return (
 		<section className='gallery-filter'>
 			<aside>
-				{/* Logic for getting categories from data array & rendering them goes here */}
 				<ul className='gallery-filter__list'>
-					<li className='gallery-filter__list--item' onClick={handleClick} >All</li>
-					<li className='gallery-filter__list--item' onClick={handleClick} >Category 1</li>
-					<li className='gallery-filter__list--item' onClick={handleClick} >Category 2</li>
-					<li className='gallery-filter__list--item' onClick={handleClick} >Category 3</li>
-					<li className='gallery-filter__list--item' onClick={handleClick} >Category 4</li>
-					<li className='gallery-filter__list--item' onClick={handleClick} >Category 5</li>
+					{
+						foundCategories.map((category, index) => {
+							return (
+								<li className='gallery-filter__list--item' onClick={handleClick} key={index} >{category}</li>
+							)
+						})
+					}
 				</ul>
 			</aside>
 
-			<GalleryGrid galleryImages={galleryData} />
+			<GalleryGrid
+				galleryImages={galleryData}
+			/>
 
 		</section>
 	)
