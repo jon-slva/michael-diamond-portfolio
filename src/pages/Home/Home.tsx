@@ -1,28 +1,20 @@
 // import { useState } from 'react'
-import { Slider } from '../../components/Slider/Slider'
+import GalleryCategoryFilter from '../../components/GalleryCategoryFilter/GalleryCategoryFilter'
+import Slider from '../../components/Slider/Slider'
 import './Home.scss'
-// import { SliderProps, GalleryProps } from './types';
-import { GalleryCategoryFilter } from '../../components/GalleryCategoryFilter/GalleryCategoryFilter';
-
-// import slideData from '../../data/slider_images.json'
-// import slideData from '../../data/slider_images.json'
+// import { GalleryProps } from './types';
 
 
-export function Home(): React.ReactElement {
-	// const [sliderImages, setSliderImages] = useState<SliderProps>(slideData)
+export default function Home({ galleryData, foundCategories }): React.ReactElement {
 	// const [galleryImages, setGalleryImages] = useState<GalleryProps>(galleryData)
 
 
 	return (
 		<main>
 
-			<Slider
-			// sliderImages={slideData}
-			/>
+			<Slider />
 
-			<GalleryCategoryFilter
-			// galleryImages={galleryImages}
-			/>
+			<GalleryCategoryFilter galleryData={galleryData} foundCategories={foundCategories} />
 
 		</main>
 	)

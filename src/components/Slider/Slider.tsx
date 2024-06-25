@@ -6,7 +6,7 @@ import slideData from '../../data/slider_images.json'
 
 
 
-export function Slider(
+export default function Slider(
 	// { sliderImages }: SliderProps
 ): React.ReactElement {
 	const [currentSlide, setCurrentSlide] = useState(0)

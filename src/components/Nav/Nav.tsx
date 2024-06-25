@@ -2,7 +2,7 @@ import './Nav.scss'
 import { NavLink } from 'react-router-dom';
 
 
-export function Nav(): React.ReactElement {
+export default function Nav(): React.ReactElement {
 
 	return (
 		<header className='header'>
@@ -12,7 +12,6 @@ export function Nav(): React.ReactElement {
 				alt="Michael Diamond Logo"
 				className='header__logo'
 			/>
-
 
 			<nav aria-label="Main navigation" className='nav'>
 
