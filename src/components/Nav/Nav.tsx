@@ -13,7 +13,6 @@ export default function Nav(): React.ReactElement {
 				className='header__logo'
 			/>
 
-
 			<nav aria-label="Main navigation" className='nav'>
 
 				<img
