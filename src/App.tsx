@@ -5,16 +5,15 @@ import Nav from './components/Nav/Nav';
 
 import galleryData from './data/portfolio_images.json';
 
-// Function to transform camelCase to Normal Case
 const formatCategoryName = (category: string) => {
 	const formatted = category
-		.replace(/([A-Z])/g, ' $1').trim() // Insert a space before each uppercase letter and trim any leading space
-		.replace(/^./, (str) => str.toUpperCase()); // Capitalize the first letter of the resulting string
+		.replace(/([A-Z])/g, ' $1').trim()
+		.replace(/^./, (str) => str.toUpperCase());
 	return formatted;
 };
 
 const uniqueCategories: Map<string, string> = new Map();
-uniqueCategories.set('all', 'All'); // Add the "All" category manually
+uniqueCategories.set('all', 'All');
 
 galleryData.forEach((image: { category: string }) => {
 	const formattedCategory = formatCategoryName(image.category);
@@ -23,7 +22,6 @@ galleryData.forEach((image: { category: string }) => {
 	}
 });
 
-// Convert the Map to an array for rendering, if needed
 const foundCategories = Array.from(uniqueCategories, ([key, value]) => ({ key, value }));
 
 
