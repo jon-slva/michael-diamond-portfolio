@@ -6,7 +6,6 @@ import './Home.scss'
 
 
 export default function Home({ galleryData, foundCategories }): React.ReactElement {
-	// const [galleryImages, setGalleryImages] = useState<GalleryProps>(galleryData)
 
 
 	return (
