@@ -12,13 +12,15 @@ export default function GalleryCategoryFilter({ galleryData, foundCategories }):
 		setSelectedCategory(categoryKey);
 	};
 
+	console.log(foundCategories)
+
 	return (
 		<section className='gallery-filter'>
 
 			<aside>
 				<ul className='gallery-filter__list'>
 					{
-						foundCategories.map(category => {
+						foundCategories.map((category: { key: string, value: string }) => {
 							return (
 								<li className='gallery-filter__list--item' onClick={() => { handleClick(category.key) }} key={category.key} >{category.value}</li>
 							)
