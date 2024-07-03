@@ -1,18 +1,19 @@
-import GalleryGrid from '../GalleryGrid/GalleryGrid'
-import './GalleryCategoryFilter.scss'
-// import { GalleryProps } from './types'
-import { ReactElement, useState } from 'react'
+import { useState, ReactElement } from 'react';
+import { GalleryProps } from '../../main-types';
+import GalleryGrid from '../GalleryGrid/GalleryGrid';
+import './GalleryCategoryFilter.scss';
 
 
-export default function GalleryCategoryFilter({ galleryData, foundCategories }): ReactElement {
-	const [selectedCategory, setSelectedCategory] = useState('All')
+
+export default function GalleryCategoryFilter({ galleryData, foundCategories }: GalleryProps): ReactElement {
+	const [selectedCategory, setSelectedCategory] = useState<string>('All')
+
 
 	const handleClick = (categoryKey: string) => {
 		alert(`clicked ${categoryKey}`);
 		setSelectedCategory(categoryKey);
 	};
 
-	console.log(foundCategories)
 
 	return (
 		<section className='gallery-filter'>
@@ -35,5 +36,5 @@ export default function GalleryCategoryFilter({ galleryData, foundCategories }):
 			/>
 
 		</section>
-	)
-}
+	);
+};
