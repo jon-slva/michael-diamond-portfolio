@@ -3,7 +3,7 @@ import { GalleryGridProps } from './types';
 import './GalleryGrid.scss';
 
 
-export default function GalleryGrid({ galleryImages, selectedCategory }: GalleryGridProps): ReactElement {
+export default function GalleryGrid({ galleryImages }: GalleryGridProps): ReactElement {
 	// the gallery images showing must have the category matching selectedCategory
 	// selectedCategory must be unformatted in order to match the category in the galleryImages
 
