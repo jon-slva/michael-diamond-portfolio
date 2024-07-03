@@ -1,9 +1,11 @@
-import './App.scss';
+import { ReactElement } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { UniqueCategories, FoundCategories } from './main-types';
 import Home from './pages/Home/Home';
 import Nav from './components/Nav/Nav';
-
 import galleryData from './data/portfolio_images.json';
+import './App.scss';
+
 
 const formatCategoryName = (category: string) => {
 	const formatted = category
@@ -12,7 +14,7 @@ const formatCategoryName = (category: string) => {
 	return formatted;
 };
 
-const uniqueCategories: Map<string, string> = new Map();
+const uniqueCategories: UniqueCategories = new Map();
 uniqueCategories.set('all', 'All');
 
 galleryData.forEach((image: { category: string }) => {
@@ -22,10 +24,10 @@ galleryData.forEach((image: { category: string }) => {
 	}
 });
 
-const foundCategories = Array.from(uniqueCategories, ([key, value]) => ({ key, value }));
+const foundCategories: FoundCategories = Array.from(uniqueCategories, ([key, value]) => ({ key, value }));
 
 
-function App() {
+export default function App(): ReactElement {
 
 	return (
 		<BrowserRouter
@@ -33,10 +35,16 @@ function App() {
 		>
 			<Nav />
 			<Routes>
-				<Route path='/' element={<Home galleryData={galleryData} foundCategories={foundCategories} />} />
+				<Route
+					path='/'
+					element={
+						<Home
+							galleryData={galleryData}
+							foundCategories={foundCategories}
+						/>
+					}
+				/>
 			</Routes>
 		</BrowserRouter>
-	)
-}
-
-export default App
+	);
+};
