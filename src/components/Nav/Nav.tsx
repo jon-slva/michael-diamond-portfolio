@@ -1,8 +1,9 @@
-import './Nav.scss'
+import { ReactElement } from 'react';
 import { NavLink } from 'react-router-dom';
+import './Nav.scss'
 
 
-export default function Nav(): React.ReactElement {
+export default function Nav(): ReactElement {
 
 	return (
 		<header className='header'>
@@ -33,4 +34,4 @@ export default function Nav(): React.ReactElement {
 
 		</header >
 	);
-}
+};
