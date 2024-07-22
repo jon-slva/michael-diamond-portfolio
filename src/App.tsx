@@ -9,8 +9,9 @@ import './App.scss';
 
 const formatCategoryName = (category: string) => {
 	const formatted = category
+		// Insert space before capital letters, g indicates a "global" search, so all instances are replaced.
+		// All incoming data should be camelCase, so this should work. 
 		.replace(/([A-Z])/g, ' $1').trim()
-		.replace(/^./, (str) => str.toUpperCase());
 	return formatted;
 };
 
