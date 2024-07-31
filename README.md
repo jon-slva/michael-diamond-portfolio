@@ -1,6 +1,6 @@
 # Michael Diamond Portfolio
 
-This is a portfolio site for Fashion Illustrator Michael Diamond.
+This is a portfolio site for Ralph Lauren Fashion Illustrator Michael Diamond.
 
 Technologies used:
 - React
