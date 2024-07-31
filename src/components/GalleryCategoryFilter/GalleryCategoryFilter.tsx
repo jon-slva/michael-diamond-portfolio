@@ -1,15 +1,36 @@
 import { useState, ReactElement } from 'react';
-import { GalleryProps } from '../../main-types';
+import galleryData from '../../data/portfolio_images.json';
+import { FoundCategories, UniqueCategories, Image } from './types';
 import GalleryGrid from '../GalleryGrid/GalleryGrid';
 import './GalleryCategoryFilter.scss';
 
 
+const formatCategoryName = (category: string): string => {
+	const formatted = category
+		// Insert space before capital letters, g indicates a "global" search, so all instances are replaced.
+		// All incoming data should be camelCase, so this should work. 
+		.replace(/([A-Z])/g, ' $1').trim()
+	return formatted;
+};
 
-export default function GalleryCategoryFilter({ galleryData, foundCategories }: GalleryProps): ReactElement {
+const uniqueCategories: UniqueCategories = new Map();
+uniqueCategories.set('all', 'All');
+
+galleryData.forEach((image: Image) => {
+	const formattedCategory = formatCategoryName(image.category);
+	if (!uniqueCategories.has(image.category)) {
+		uniqueCategories.set(image.category, formattedCategory);
+	}
+});
+
+const foundCategories: FoundCategories = Array.from(uniqueCategories, ([key, value]) => ({ key, value }));
+
+
+export default function GalleryCategoryFilter(): ReactElement {
 	const [selectedCategory, setSelectedCategory] = useState<string>('All')
 
 
-	const handleClick = (categoryKey: string) => {
+	const handleClick = (categoryKey: string): void => {
 		alert(`clicked ${categoryKey}`);
 		setSelectedCategory(categoryKey);
 	};
