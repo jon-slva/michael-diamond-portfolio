@@ -1,5 +1,6 @@
 import { ReactElement } from 'react';
 import { GalleryGridProps } from './types';
+import { Image } from '../GalleryCategoryFilter/types';
 import './GalleryGrid.scss';
 
 
@@ -10,7 +11,7 @@ export default function GalleryGrid({ galleryImages }: GalleryGridProps): ReactE
 	return (
 		<section className='gallery-grid'>
 
-			{galleryImages.map((image, index) => {
+			{galleryImages.map((image: Image, index: number) => {
 				return (
 					<img
 						key={index}

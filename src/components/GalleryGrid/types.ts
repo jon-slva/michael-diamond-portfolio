@@ -1,5 +1,6 @@
-import { GalleryData } from "../../main-types";
+import { Image } from "../GalleryCategoryFilter/types";
 
+export type GalleryData = Image[];
 
 export type SelectedCategory = string;
 export interface GalleryGridProps {
