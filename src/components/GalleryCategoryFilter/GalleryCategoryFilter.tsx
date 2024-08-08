@@ -30,7 +30,7 @@ const fetchAndFormatCategories = (): FoundCategories => {
 
 
 export default function GalleryCategoryFilter(): ReactElement {
-	const [selectedCategory, setSelectedCategory] = useState<string>('All')
+	const [selectedCategory, setSelectedCategory] = useState<string>('all')
 	const [categories, setCategories] = useState<FoundCategories>([]);
 
 
@@ -46,7 +46,6 @@ export default function GalleryCategoryFilter(): ReactElement {
 	}, []);
 
 	const handleClick = (categoryKey: string): void => {
-		alert(`clicked ${categoryKey}`);
 		setSelectedCategory(categoryKey);
 	};
 
