@@ -9,5 +9,7 @@ export interface Image {
 	thumbScale: number | string;
 }
 
+export type ImageWithId = Image & { uuid: string };
+
 export type FoundCategories = { key: string, value: string }[];
 export type UniqueCategories = Map<string, string>;

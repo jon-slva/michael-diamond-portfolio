@@ -1,9 +1,16 @@
 import { useState, useEffect, ReactElement } from 'react';
+import { v4 as uuidv4 } from 'uuid';
 import galleryData from '../../data/portfolio_images.json';
 import { FoundCategories, UniqueCategories, Image } from './types';
 import GalleryGrid from '../GalleryGrid/GalleryGrid';
 import './GalleryCategoryFilter.scss';
 
+const galleryDataWithIds = galleryData.map((image: Image) => {
+	return {
+		...image,
+		uuid: uuidv4()
+	}
+});
 
 const formatCategoryName = (category: string): string => {
 	const formatted = category
@@ -17,7 +24,7 @@ const fetchAndFormatCategories = (): FoundCategories => {
 	const uniqueCategories: UniqueCategories = new Map();
 	uniqueCategories.set('all', 'All');
 
-	galleryData.forEach((image: Image) => {
+	galleryDataWithIds.forEach((image: Image) => {
 		const formattedCategory = formatCategoryName(image.category);
 		if (!uniqueCategories.has(image.category)) {
 			uniqueCategories.set(image.category, formattedCategory);
@@ -67,7 +74,7 @@ export default function GalleryCategoryFilter(): ReactElement {
 
 			<GalleryGrid
 				// Add a skeleton UI to load while the categories are being fetched.
-				galleryImages={galleryData}
+				galleryImages={galleryDataWithIds}
 				selectedCategory={selectedCategory}
 			/>
 
