@@ -1,9 +1,27 @@
 import { useState, useEffect, ReactElement } from 'react';
+import { v4 as uuidv4 } from 'uuid';
 import galleryData from '../../data/portfolio_images.json';
 import { FoundCategories, UniqueCategories, Image } from './types';
 import GalleryGrid from '../GalleryGrid/GalleryGrid';
 import './GalleryCategoryFilter.scss';
 
+
+// Shuffles the order of the data in the array.
+function shuffleArray(array: any[]): any[] {
+	for (let i = array.length - 1; i > 0; i--) {
+		const j = Math.floor(Math.random() * (i + 1));
+		[array[i], array[j]] = [array[j], array[i]];
+	}
+	return array;
+}
+
+// Add a unique id to each image.
+const galleryDataWithIds = shuffleArray(galleryData.map((image: Image) => {
+	return {
+		...image,
+		uuid: uuidv4()
+	}
+}));
 
 const formatCategoryName = (category: string): string => {
 	const formatted = category
@@ -17,7 +35,7 @@ const fetchAndFormatCategories = (): FoundCategories => {
 	const uniqueCategories: UniqueCategories = new Map();
 	uniqueCategories.set('all', 'All');
 
-	galleryData.forEach((image: Image) => {
+	galleryDataWithIds.forEach((image: Image) => {
 		const formattedCategory = formatCategoryName(image.category);
 		if (!uniqueCategories.has(image.category)) {
 			uniqueCategories.set(image.category, formattedCategory);
@@ -67,7 +85,7 @@ export default function GalleryCategoryFilter(): ReactElement {
 
 			<GalleryGrid
 				// Add a skeleton UI to load while the categories are being fetched.
-				galleryImages={galleryData}
+				galleryImages={galleryDataWithIds}
 				selectedCategory={selectedCategory}
 			/>
 
