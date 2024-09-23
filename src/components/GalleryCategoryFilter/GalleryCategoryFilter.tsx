@@ -5,12 +5,23 @@ import { FoundCategories, UniqueCategories, Image } from './types';
 import GalleryGrid from '../GalleryGrid/GalleryGrid';
 import './GalleryCategoryFilter.scss';
 
-const galleryDataWithIds = galleryData.map((image: Image) => {
+
+// Shuffles the order of the data in the array.
+function shuffleArray(array: any[]): any[] {
+	for (let i = array.length - 1; i > 0; i--) {
+		const j = Math.floor(Math.random() * (i + 1));
+		[array[i], array[j]] = [array[j], array[i]];
+	}
+	return array;
+}
+
+// Add a unique id to each image.
+const galleryDataWithIds = shuffleArray(galleryData.map((image: Image) => {
 	return {
 		...image,
 		uuid: uuidv4()
 	}
-});
+}));
 
 const formatCategoryName = (category: string): string => {
 	const formatted = category
