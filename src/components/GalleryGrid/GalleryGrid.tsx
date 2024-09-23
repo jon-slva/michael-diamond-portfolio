@@ -1,31 +1,37 @@
 import { ReactElement } from 'react';
 import { GalleryGridProps } from './types';
-import { Image } from '../GalleryCategoryFilter/types';
+import { ImageWithId } from '../GalleryCategoryFilter/types';
+import { motion, AnimatePresence } from 'framer-motion';
 import './GalleryGrid.scss';
 
 
 export default function GalleryGrid({ galleryImages, selectedCategory }: GalleryGridProps): ReactElement {
 	// the gallery images showing must have the category matching selectedCategory
 	// selectedCategory must be unformatted in order to match the category in the galleryImages
-
+	const filteredImages = selectedCategory === "all" ? galleryImages : galleryImages.filter(image => image.category === selectedCategory);
 
 	return (
-		<section className='gallery-grid'>
-
-			{(selectedCategory === "all" ? galleryImages : galleryImages.filter(image => image.category === selectedCategory)).map((image: Image, index: number) => {
-				return (
-					<img
-						key={index}
+		<AnimatePresence>
+			<motion.div className='gallery-grid' layout>
+				{filteredImages.map((image: ImageWithId) => (
+					<motion.div
+						layout
+						key={image.uuid}
 						className="gallery-grid__item"
-						src={image.thumbSrc}
-						alt={image.alt}
 						style={{
-							objectPosition: `${image.thumbPosX} ${image.thumbPosY}`
+							backgroundImage: `url(${image.thumbSrc})`,
+							backgroundSize: 'cover',
+							backgroundPosition: `${image.thumbPosX} ${image.thumbPosY}`
 						}}
-					/>
-				)
-			})}
-
-		</section>
+						animate={{ opacity: 1 }}
+						initial={{ opacity: 0 }}
+						exit={{ opacity: 0 }}
+						transition={{ duration: 1 }}
+					>
+						<h3>{image.alt}</h3>
+					</motion.div>
+				))}
+			</motion.div>
+		</AnimatePresence>
 	);
 };
