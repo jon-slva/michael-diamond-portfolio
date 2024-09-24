@@ -26,7 +26,7 @@ export default function GalleryGrid({ galleryImages, selectedCategory }: Gallery
 						animate={{ opacity: 1 }}
 						initial={{ opacity: 0 }}
 						exit={{ opacity: 0 }}
-						transition={{ duration: 0.5 }}
+						transition={{ duration: 0.75 }}
 					>
 						<motion.div
 							className="gallery-grid__item--overlay"
@@ -35,6 +35,7 @@ export default function GalleryGrid({ galleryImages, selectedCategory }: Gallery
 							transition={{ duration: 0.5 }}
 						>
 							<h3>{image.title}</h3>
+							{/* <p>Click to Expand</p> */}
 						</motion.div>
 					</motion.div>
 				))}
