@@ -26,12 +26,19 @@ export default function GalleryGrid({ galleryImages, selectedCategory }: Gallery
 						animate={{ opacity: 1 }}
 						initial={{ opacity: 0 }}
 						exit={{ opacity: 0 }}
-						transition={{ duration: 1 }}
+						transition={{ duration: 0.5 }}
 					>
-						<h3>{image.alt}</h3>
+						<motion.div
+							className="gallery-grid__item--overlay"
+							initial={{ opacity: 0 }}
+							whileHover={{ opacity: 1 }}
+							transition={{ duration: 0.5 }}
+						>
+							<h3>{image.title}</h3>
+						</motion.div>
 					</motion.div>
 				))}
 			</motion.div>
-		</AnimatePresence>
+		</AnimatePresence >
 	);
 };
